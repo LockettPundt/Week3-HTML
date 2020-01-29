@@ -9,16 +9,25 @@
                 background-color: black;
             }
             .container {
-                display: flex;
-                flex-direction: row;
                 margin: 200px auto 200px auto;
+                min-width: 1000px;
+                max-width: 1000px;
+                height: auto;
             }
             .navbar {
+                width: auto;
+                font-family: "Playfair Display";
+                display: flex;
+                text-align: center;
+                font-size: 11px;
+                margin-right: -12px;
+                padding: 0px 7px 2px 0px;
                 justify-content: flex-end;
+                height: 30px;
             }
             main {
-                background-color: #D4C1C4;
-                margin: 100px 30px 100px 30px;
+                background-color:#E5D9DB;
+                margin: 100px 80px 100px 80px;
                 width: 75%;
                 height: auto;
             }
@@ -29,34 +38,57 @@
                 text-align: center;
                 background-color: #E5D9DB;
                 font-family: "Playfair Display";
-                font-size: 55px;
-                padding: 70px 0px 0px 0px;
-                line-height: 45px;
-                width: 75%;
-                max-height: auto;
+                font-size: 85px;
+                padding: 40px 0px 0px 0px;
+                line-height: 68px;
+                width: 100%;
+                min-height: 427px;
+                max-height: 427px;
             }
             .textblock {
-                position: relative;
-                align-self: center;
+                position: absolute;
+                float: left;
                 text-align: center;
                 background-color:  #E5D9DB;
                 margin: -250px 10px 10px 80px;
                 width: 215px;
-                height: 130px;
+                height: fit-content;
             }
             .img1 {
+                float: left;
                 width: auto;
                 height: 500px;
             }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            .p2 {
+                font-family: "Playfair Display";
+                color: black;
+                line-height: 11px;
+                font-size: 20px;
+            }
+            
         </style>
     </head>
     <body>
         <main id="container" class="container">
             <img class="img1" src="pexels-photo-2840134.jpg">
-            <div class="textdiv">
-                Numero<br>
+            <nav class="navbar">
+                <ul><a href="#">INSTAGRAM</a></ul>
+                <ul><a href="#">TWITTER</a></ul>
+                <ul><a href="#">FACEBOOK</a></ul>
+                <ul><a href="#">PINTEREST</a></ul>
+            </nav>
+            <section class="textdiv">
+                <p>Numero<br>
                 <em>Elections-n6</em>
-            </div>
+                </p>
+                <p class="p2">
+                    By Lockett Pundt
+                </p>
+            </section>
         </main>
        
 
