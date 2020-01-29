@@ -14,22 +14,12 @@
                 max-width: 1000px;
                 height: auto;
             }
-            .navbar {
-                width: auto;
-                font-family: "Playfair Display";
-                display: flex;
-                text-align: center;
-                font-size: 11px;
-                margin-right: -12px;
-                padding: 0px 17px 2px 0px;
-                justify-content: flex-end;
-                height: 30px;
-            }
             main {
                 background-color:#E5D9DB;
                 margin: 100px 80px 100px 80px;
                 width: 75%;
                 height: auto;
+                box-sizing: border-box;
             }
             div {
                 background-color: white;
@@ -39,11 +29,12 @@
                 background-color: #E5D9DB;
                 font-family: "Playfair Display";
                 font-size: 85px;
-                padding: 40px 0px 0px 0px;
+                padding: 31px 0px 0px 0px;
                 line-height: 68px;
                 width: 100%;
-                min-height: 427px;
-                max-height: 427px;
+                min-height: 450px;
+                max-height: 450px;
+                box-sizing: border-box;
             }
             .textblock {
                 position: absolute;
@@ -69,17 +60,34 @@
                 line-height: 11px;
                 font-size: 20px;
             }
+            .navbar {
+                width: auto;
+                font-family: "Playfair Display";
+                display: flex;
+                text-align: center;
+                font-size: 11px;
+                margin: 10px 10px 10px 10px;
+                padding: 4px;
+                list-style-type: none;
+                justify-content: flex-end;
+                height: 30px;
+            }
+            li {
+                margin-left: 20px;
+            }
             
         </style>
     </head>
     <body>
         <main id="container" class="container">
             <img class="img1" src="pexels-photo-2840134.jpg">
-            <nav class="navbar">
-                <ul><a href="#">INSTAGRAM</a></ul>
-                <ul><a href="#">TWITTER</a></ul>
-                <ul><a href="#">FACEBOOK</a></ul>
-                <ul><a href="#">PINTEREST</a></ul>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#">INSTAGRAM</a></li>
+                    <li><a href="#">TWITTER</a></li>
+                    <li><a href="#">FACEBOOK</a></li>
+                    <li><a href="#">PINTEREST</a></li>
+                </ul>
             </nav>
             <section class="textdiv">
                 <p>Numero<br>
