@@ -12,7 +12,7 @@ html {
     max-width: 900px;
 }
 .fox-gallery .photo {
-    flex: 2 2 500px;
+    flex: 1 1 300px;
     list-style: none;
     margin: 2px;
     
