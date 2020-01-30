@@ -1,4 +1,5 @@
 html {
+    font-size: 16px;
     box-sizing: border-box;
 }
 *,
@@ -10,31 +11,31 @@ body {
     background-color: black;   
 }
 .container {
-    margin: 150px auto 200px auto;
-    min-width: 1000px;
-    max-width: 1000px;
     display: flex;
-    overflow: auto;
     flex-direction: row;
-    height: auto;
-}
-main {
     background-color: green;
-    margin: 100px 80px 100px 80px;
-    width: 75%;
+    margin: 120px auto 200px auto;
+    max-width: 1000px;
+    width: 100%;
     height: auto;
-    display: flex;
-    box-sizing: border-box;
+    max-height: 600px;
 }
-div {
-    background-color: white;
+.container .img-wrapper {
+    flex: 1 1 auto;
+    background-color:black;
+    height: 600px;
+    width: auto;
+}
+img {
+    height: 100%;
+    width: auto;
 }
 .textandnav {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    flex: 1 1 auto;
     width: 100%;
-    height: auto;
+    height: 600px;
 }
 .textdiv {
     text-align: center;
@@ -43,14 +44,6 @@ div {
     font-size: 68px;
     padding: 21px 0px 0px 0px;
     line-height: 53px;
-    /* width: 100%; */
-    overflow: auto;
-    min-height: 100%;
-}
-
-.img1 {
-    width: auto;
-    height: 650px;
 }
 a {
     text-decoration: none;
@@ -67,7 +60,7 @@ a {
     color: black;
     line-height: 11px;
     font-size: 12px;
-    margin-top: 300px;
+    margin-top: 275px;
 }
 nav {
     display: flex;
@@ -85,16 +78,15 @@ nav {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    height: 30px;
+    height: 100%;
 }
 li {
     margin-left: 20px;
     padding-right: 4px;
 }
 .hamburger {
-    display: flex;
     background-color: #E5D9DB;
     padding-left: 5px;
-    height: 30px;
+    height: 100%;
     width: 32px;
 }
